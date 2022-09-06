@@ -1,0 +1,40 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(116, 192, 86);
+}
+
+ul {
+  list-style: none;
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  font-size: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.562);
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: rgb(158, 79, 189);
+  border-radius: 10px;
+  text-shadow: none;
+}
+
+nav img {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  filter: drop-shadow(0px 0px 2px #ffffff);
+}
