@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(116, 192, 86);
+  background-color: var(--verde);
 }
 
 ul {
@@ -27,9 +27,13 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: white;
-  color: rgb(158, 79, 189);
+  color: var(--morado);
   border-radius: 10px;
   text-shadow: none;
+}
+
+svg {
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.562));
 }
 
 nav img {

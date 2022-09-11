@@ -5,6 +5,11 @@
   font-style: normal;
 }
 
+:root {
+  --morado: rgb(158, 79, 189);
+  --verde: rgb(116, 192, 86);
+}
+
 * {
   margin: 0;
   padding: 0;
