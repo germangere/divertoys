@@ -3,3 +3,9 @@ h1 {
   margin: 2rem;
   color: var(--morado);
 }
+
+.itemListContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
