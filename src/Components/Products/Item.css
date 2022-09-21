@@ -1,0 +1,29 @@
+.card {
+  margin: 30px;
+  text-align: center;
+  border: 2px solid rgb(23, 80, 0);
+  border-radius: 15px;
+  background-color: var(--verde);
+  transition: all 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px var(--morado);
+  transform: scale(1.01);
+}
+
+.cardImg img {
+  border-radius: 15px;
+}
+
+.cardInfo {
+  padding: 20px;
+  color: whitesmoke;
+  font-weight: 400;
+  text-shadow: 0 0 3px black;
+}
+
+.cardInfo h4 {
+  margin: 10px;
+  font-weight: 400;
+}
