@@ -9,8 +9,9 @@ function ItemDetailContainer() {
   const { id } = useParams();
 
   useEffect(() => {
-    getItem(id).then((item) => setItemData(item))
-  }, [])
+    getItem(id).then((item) => setItemData(item));
+  }, [id])
+
 
   return (
     <ItemDetail
@@ -23,4 +24,4 @@ function ItemDetailContainer() {
   )
 }
 
-export default ItemDetailContainer
+export default ItemDetailContainer;
