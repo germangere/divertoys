@@ -3,7 +3,7 @@ import { getItem } from '../../Services/MockData';
 import ItemDetail from './ItemDetail';
 
 function ItemDetailContainer() {
-  const [itemData, setItemData] = useState([]);
+  const [itemData, setItemData] = useState({});
 
   useEffect(() => {
     getItem().then((item) => { setItemData(item) })

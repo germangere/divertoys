@@ -1,15 +1,7 @@
-import { useEffect } from "react";
-import { useState } from "react";
-import getData from "../../Services/MockData";
 import Item from "./Item";
 import "./ItemList.css";
 
-function ItemList() {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    getData().then((data) => setData(data));
-  }, [])
-
+function ItemList({ data }) {
   return (
     <div className="itemList">
       {data.map((item) => {

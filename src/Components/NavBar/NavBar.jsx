@@ -8,8 +8,9 @@ function NavBar() {
         <nav>
           <img src="./assets/logo.png" alt="logo" />
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Juguetes</a></li>
+            <li><a href="#">Juegos de mesa</a></li>
+            <li><a href="#">Aire libre</a></li>
             <li><a href="#"><Cart /></a></li>
           </ul>
         </nav>
