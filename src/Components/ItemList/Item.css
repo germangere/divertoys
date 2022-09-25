@@ -1,7 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  margin: 30px;
+  margin: 15px;
   width: 180px;
   height: 300px;
   text-align: center;
@@ -35,6 +35,5 @@
 }
 
 .cardInfo h4 {
-  /* margin: 10px; */
   font-weight: 400;
 }

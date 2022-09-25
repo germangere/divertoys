@@ -1,17 +1,20 @@
 import Cart from '../CartWidget/CartWidget';
 import './NavBar.css';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
     <>
       <header>
         <nav>
-          <img src="./assets/logo.png" alt="logo" />
+          <Link to='/'>
+            <img src="/assets/logo.png" alt="logo" />
+          </Link>
           <ul>
-            <li><a href="#">Juguetes</a></li>
-            <li><a href="#">Juegos de mesa</a></li>
-            <li><a href="#">Aire libre</a></li>
-            <li><a href="#"><Cart /></a></li>
+            <li><Link to='/categoria/juguetes'>Juguetes</Link></li>
+            <li><Link to='/categoria/juegos de mesa'>Juegos de mesa</Link></li>
+            <li><Link to='/categoria/aire libre'>Aire libre</Link></li>
+            <li><Link to='/cart'><Cart /></Link></li>
           </ul>
         </nav>
       </header>

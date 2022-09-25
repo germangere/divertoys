@@ -1,13 +1,14 @@
-import Item from "./Item";
-import "./ItemList.css";
+import Item from './Item';
+import './ItemList.css';
 
 function ItemList({ data }) {
   return (
-    <div className="itemList">
+    <div className='itemList'>
       {data.map((item) => {
         return (
           <Item
             key={item.id}
+            id={item.id}
             img={item.img}
             title={item.title}
             price={item.price}

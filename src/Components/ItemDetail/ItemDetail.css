@@ -11,10 +11,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 50%;
 }
 
 .detailImg img {
   border-radius: 15px;
+  height: auto;
 }
 
 .detailInfo {
@@ -24,15 +26,23 @@
   justify-content: space-around;
   align-items: center;
   padding: 20px;
+  background-color: var(--morado);
+  color: whitesmoke;
+  border-radius: 0 15px 15px 0;
+  text-shadow: 0 0 5px black;
+  text-align: center;
 }
 
 .detailInfo p {
-  text-align: center;
   margin: 10px;
 }
 
+.detailInfo h3 {
+  font-size: 3rem;
+}
+
 .detailInfo h4 {
-  border: 2px solid var(--morado);
+  border: 2px solid var(--verde);
   padding: 10px;
   border-radius: 10px;
 }
