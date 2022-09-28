@@ -6,6 +6,7 @@ const data = [
     description: 'Excelente autonomía. 100mts de alcance. Velocidad máxima de 30km/h',
     category: 'juguetes',
     img: '/assets/img/auto_rc.jpg',
+    stock: 11
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const data = [
     description: 'Oficial Marvel. 15cm de alto, totalmente articulado',
     category: 'juguetes',
     img: '/assets/img/hulk.jpg',
+    stock: 19
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const data = [
     description: 'Clásico juego de mesa. Alta calidad de plásticos y tablero plegable',
     category: 'juegos de mesa',
     img: '/assets/img/ajedrez.jpg',
+    stock: 26
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ const data = [
     description: 'Par de paletas con pelota incluída. Ideal para llevar a la playa',
     category: 'aire libre',
     img: '/assets/img/paletas.jpg',
+    stock: 8
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ const data = [
     description: 'Diámetro 3 Mts. Tela reforzada. Con escalera. Seguridad y máxima resistencia',
     category: 'aire libre',
     img: '/assets/img/cama_elastica.jpg',
+    stock: 13
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ const data = [
     description: 'Clásico infaltable. Gran juego de guerra y estrategia. Arma tu plan para conquistar el mundo!',
     category: 'juegos de mesa',
     img: '/assets/img/teg.jpg',
+    stock: 12
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ const data = [
     description: 'Ruedas de 10cm a rulemanes. Colores varios. Altura regulable',
     category: 'aire libre',
     img: '/assets/img/monopatin.jpg',
+    stock: 10
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ const data = [
     description: 'Plásticos de primera calidad. Colores vívidos. Incluye calcomanías y vehículos',
     category: 'juguetes',
     img: '/assets/img/estacion.jpg',
+    stock: 7
   }
 ]
 

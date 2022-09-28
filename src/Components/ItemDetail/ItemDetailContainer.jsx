@@ -16,6 +16,7 @@ function ItemDetailContainer() {
   return (
     <ItemDetail
       id={itemData.id}
+      stock={itemData.stock}
       img={itemData.img}
       title={itemData.title}
       description={itemData.description}

@@ -46,3 +46,11 @@
   padding: 10px;
   border-radius: 10px;
 }
+
+.detailInfo a {
+  background-color: var(--verde);
+  text-shadow: none;
+  color: white;
+  padding: 1rem;
+  border-radius: 15px;
+}
