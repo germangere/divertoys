@@ -30,7 +30,7 @@ export default function CartContextProvider(props) {
   function removeArticle(id) {
     if (cart.length === 0) console.log('El carrito está vacío, nada para quitar');
     if (isInCart(id)) {
-      let carrito = cart.map((el) => el.id !== id);
+      let carrito = cart.filter((el) => el.id !== id);
       setCart(carrito);
     } else console.log('El artículo no está agragado al carrito');
   }
@@ -44,9 +44,21 @@ export default function CartContextProvider(props) {
     setCart([]);
   }
 
+  function precioTotal() {
+    let precioFinal = 0;
+    cart.forEach(el => precioFinal += el.price * el.quantity);
+    return precioFinal;
+  }
+
+  function totalItems() {
+    let enCarrito = 0;
+    cart.forEach(el => enCarrito += el.quantity);
+    return enCarrito;
+  }
+
 
   return (
-    <cartContext.Provider value={{ cart, addToCart, isInCart, clearCart, removeArticle }}>
+    <cartContext.Provider value={{ cart, addToCart, isInCart, clearCart, removeArticle, precioTotal, totalItems }}>
       {props.children}
     </cartContext.Provider>
   )
