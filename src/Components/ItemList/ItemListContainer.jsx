@@ -1,6 +1,6 @@
 import './ItemListContainer.css';
 import ItemList from './ItemList';
-import getData, { getByCategory } from '../../Services/MockData';
+import { getData, getByCategory } from '../../Services/Firebase';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 

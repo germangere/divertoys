@@ -5,8 +5,10 @@ import NavBar from './Components/NavBar/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CartContainer from './Components/Cart/CartContainer';
 import CartContextProvider from './context/cartContext';
+// import { setData } from './Services/Firebase';
 
 function App() {
+  // setData()
   return (
     <CartContextProvider>
       <BrowserRouter>

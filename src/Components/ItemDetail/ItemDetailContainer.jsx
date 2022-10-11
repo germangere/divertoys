@@ -1,6 +1,6 @@
 import './ItemDetail.css';
 import { useState, useEffect } from 'react'
-import { getItem } from '../../Services/MockData';
+import { getItem } from '../../Services/Firebase';
 import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
 

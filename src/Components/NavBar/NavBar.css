@@ -32,7 +32,7 @@ nav ul li a:hover {
   text-shadow: none;
 }
 
-svg {
+nav svg {
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.562));
 }
 

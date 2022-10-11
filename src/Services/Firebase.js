@@ -1,3 +1,40 @@
+import { initializeApp } from "firebase/app";
+import { getFirestore, collection, getDocs, doc, getDoc, query, where, addDoc } from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAKaDnm5w3hwCPgYyzgI4ANfEcf-F4IyM4",
+  authDomain: "divertoys-212d9.firebaseapp.com",
+  projectId: "divertoys-212d9",
+  storageBucket: "divertoys-212d9.appspot.com",
+  messagingSenderId: "179258481939",
+  appId: "1:179258481939:web:eb0db4919a9fb38ae98ee6"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+// Inicializo DB
+const db = getFirestore(app);
+const coleccion = collection(db, 'toys');
+
+export async function getData() {
+  const snapshot = await getDocs(coleccion);
+  const data = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+  return data;
+}
+
+export async function getItem(item) {
+  const docRef = doc(db, 'toys', item);
+  const snapDoc = await getDoc(docRef);
+  return { id: snapDoc.id, ...snapDoc.data() };
+}
+
+export async function getByCategory(cat) {
+  const q = query(coleccion, where('category', '==', cat));
+  const snapQuery = await getDocs(q);
+  const data = snapQuery.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+  return data;
+}
+
 const data = [
   {
     title: 'Auto radio control',
@@ -64,31 +101,9 @@ const data = [
     stock: 7
   }
 ]
-
-export default function getData() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(data)
-    }, 1000)
-  })
-}
-
-export function getItem(item) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      let result = data.find(el => el.id === parseInt(item));
-      if (result) resolve(result);
-      else reject(new Error('Elemento no encontrado'));
-    }, 1000)
-  })
-}
-
-export function getByCategory(cat) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      let result = data.filter((el) => el.category === cat);
-      if (result) resolve(result);
-      else reject(new Error('Categoría no encontrada'));
-    }, 1000)
+export async function setData() {
+  const coleccion = collection(db, 'toys');
+  data.forEach(async function (doc) {
+    await addDoc(coleccion, doc);
   })
 }
