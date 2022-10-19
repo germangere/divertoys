@@ -22,7 +22,7 @@ function ItemDetail(props) {
         <h3>{title}</h3>
         <p>{description}</p>
         <h4>$ {price}</h4>
-        {isInCart(id) ? <Link to='/cart'>Finalizar compra</Link> : <ItemCount stock={stock} onAdd={handleOnAdd} />}
+        {isInCart(id) ? <Link to='/cart'>Ir al carrito</Link> : <ItemCount stock={stock} onAdd={handleOnAdd} />}
       </div>
     </div>
   )

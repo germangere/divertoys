@@ -19,10 +19,7 @@ function NavBar() {
             <li><Link to='/categoria/juguetes'>Juguetes</Link></li>
             <li><Link to='/categoria/juegos de mesa'>Juegos de mesa</Link></li>
             <li><Link to='/categoria/aire libre'>Aire libre</Link></li>
-            {cartCount > 0
-              ? <li><Link to='/cart'><CartWidget cant={cartCount} /></Link></li>
-              : ''
-            }
+            {cartCount > 0 && <li><Link to='/cart'><CartWidget cant={cartCount} /></Link></li>}
           </ul>
         </nav>
       </header>

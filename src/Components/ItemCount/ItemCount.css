@@ -14,13 +14,27 @@
   width: 2rem;
   height: 100%;
   color: var(--morado);
+  cursor: pointer;
 }
 
 #addBtn {
   margin-top: 0.5rem;
   width: 100%;
-  padding: 5px;
+  padding: 0.5rem;
   border: none;
+  border-radius: 10px;
   background-color: var(--verde);
   color: #fff;
+  cursor: pointer;
+}
+
+.itemCount button:hover {
+  background-color: var(--morado);
+  color: white;
+}
+
+#addBtn:hover {
+  background-color: white;
+  color: var(--morado);
+  box-shadow: 0 0 10px white;
 }

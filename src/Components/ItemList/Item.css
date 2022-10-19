@@ -5,10 +5,9 @@
   width: 180px;
   height: 300px;
   text-align: center;
-  border: 2px solid rgb(23, 80, 0);
+  border: 1px solid gray;
   border-radius: 15px;
   background-color: var(--verde);
-  transition: all 0.3s;
 }
 
 .card:hover {

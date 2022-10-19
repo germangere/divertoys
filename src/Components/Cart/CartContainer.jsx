@@ -25,6 +25,7 @@ function CartContainer() {
           </div>
           <div className='total'>
             <h3>Total: $ {precioTotal()}</h3>
+            <Link to='/compra'>Finalizar compra</Link>
           </div>
         </>
         : <div className='cartContainer'>

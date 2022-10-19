@@ -12,7 +12,6 @@
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 10px;
-  transition: all 300ms;
 }
 
 .cartContainer a:hover {
@@ -28,10 +27,11 @@
   border-radius: 30px;
   padding: 1rem;
   margin: 0.5rem;
+  background-color: white;
 }
 
 .cartProduct img {
-  height: 100px;
+  height: 150px;
 }
 
 .cartProduct h3 {
@@ -54,7 +54,6 @@
   border: none;
   color: red;
   cursor: pointer;
-  transition: all 300ms;
 }
 
 .cartProduct button:hover {
@@ -63,12 +62,39 @@
 }
 
 .total {
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: fit-content;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 10%;
 }
 
-.total h3 {
-  float: right;
-  margin: 2rem 0;
+.total h3,
+.total a {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 100%;
+  color: white;
+  text-shadow: 0 0 10px black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 30px 30px 0 0;
+  background-color: var(--verde);
+}
+
+.total a {
+  text-decoration: none;
+  border-top: none;
+  background-color: var(--morado);
+  border-radius: 0 0 30px 30px;
+  margin-top: 0;
+}
+
+.total a:hover {
+  background-color: white;
+  box-shadow: 0 0 10px white;
+  color: var(--morado);
+  text-shadow: none;
 }
