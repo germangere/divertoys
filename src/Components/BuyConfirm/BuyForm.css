@@ -27,7 +27,7 @@ input {
   border-radius: 10px;
 }
 
-input[type='button'] {
+input[type='submit'] {
   padding: 1rem;
   width: auto;
   margin-top: 1rem;
@@ -37,7 +37,17 @@ input[type='button'] {
   text-shadow: 0 0 10px black;
 }
 
-input[type='button']:hover {
+input[type='submit']:disabled,
+input[type='submit']:disabled:hover {
+  background-color: rgb(182, 182, 182);
+  color: rgb(207, 207, 207);
+  text-shadow: none;
+  box-shadow: none;
+  border: none;
+  cursor: initial;
+}
+
+input[type='submit']:hover {
   background-color: var(--morado);
   box-shadow: 0 0 10px var(--morado);
 }

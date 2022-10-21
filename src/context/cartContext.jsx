@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { createContext } from "react";
+import { useState } from 'react';
+import { createContext } from 'react';
 
 const cartContext = createContext();
 
@@ -28,11 +28,10 @@ export default function CartContextProvider(props) {
   }
 
   function removeArticle(id) {
-    if (cart.length === 0) console.log('El carrito está vacío, nada para quitar');
     if (isInCart(id)) {
       let carrito = cart.filter((el) => el.id !== id);
       setCart(carrito);
-    } else console.log('El artículo no está agragado al carrito');
+    } else console.error('El artículo no está agregado al carrito');
   }
 
   function isInCart(id) {
@@ -56,13 +55,11 @@ export default function CartContextProvider(props) {
     return enCarrito;
   }
 
-
   return (
     <cartContext.Provider value={{ cart, addToCart, isInCart, clearCart, removeArticle, precioTotal, totalItems }}>
       {props.children}
     </cartContext.Provider>
   )
-
 }
 
 export { cartContext };

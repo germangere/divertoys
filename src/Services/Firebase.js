@@ -1,18 +1,16 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs, doc, getDoc, query, where, addDoc } from "firebase/firestore";
+import { initializeApp } from 'firebase/app';
+import { getFirestore, collection, getDocs, doc, getDoc, query, where, addDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAKaDnm5w3hwCPgYyzgI4ANfEcf-F4IyM4",
-  authDomain: "divertoys-212d9.firebaseapp.com",
-  projectId: "divertoys-212d9",
-  storageBucket: "divertoys-212d9.appspot.com",
-  messagingSenderId: "179258481939",
-  appId: "1:179258481939:web:eb0db4919a9fb38ae98ee6"
+  apiKey: 'AIzaSyAKaDnm5w3hwCPgYyzgI4ANfEcf-F4IyM4',
+  authDomain: 'divertoys-212d9.firebaseapp.com',
+  projectId: 'divertoys-212d9',
+  storageBucket: 'divertoys-212d9.appspot.com',
+  messagingSenderId: '179258481939',
+  appId: '1:179258481939:web:eb0db4919a9fb38ae98ee6'
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-// Inicializo DB
 const db = getFirestore(app);
 
 export async function getData() {

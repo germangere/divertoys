@@ -13,7 +13,7 @@ function NavBar() {
       <header>
         <nav>
           <Link to='/'>
-            <img src="/assets/logo.png" alt="logo" />
+            <img src='/assets/logo.png' alt='logo' />
           </Link>
           <ul>
             <li><Link to='/categoria/juguetes'>Juguetes</Link></li>

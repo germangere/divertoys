@@ -26,7 +26,7 @@ function ItemListContainer(props) {
     <>
       {loading
         ? <div className='loading'>
-          <div className="blob"></div>
+          <div className='blob'></div>
         </div>
         :
         <div className='itemListContainer'>

@@ -1,5 +1,5 @@
 import './ItemDetail.css';
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import { getItem } from '../../Services/Firebase';
 import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
@@ -27,7 +27,7 @@ function ItemDetailContainer() {
               <p>{error}</p>
             </div>
             : <div className='loading'>
-              <div className="blob"></div>
+              <div className='blob'></div>
             </div>
         }
       </>
